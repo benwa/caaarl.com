@@ -11,7 +11,7 @@ layout: default
 		 Carl's name <span id="odometer" class="odometer">000
 		<script>
 			setTimeout(function() {
-				odometer.innerText = {% assign total = 0 %}{% for each ep in site.data.episodes %}{% assign total = total | plus: ep.count %}{% endfor %}{{total}};
+				odometer.textContent = {% assign total = 0 %}{% for each ep in site.data.episodes %}{% assign total = total | plus: ep.count %}{% endfor %}{{total}};
 			}, 1000);
 		</script>
 		</span> times</h1>
