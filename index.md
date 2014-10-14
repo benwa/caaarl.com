@@ -11,16 +11,14 @@ layout: default
 		 Carl's name <span id="odometer" class="odometer">000
 		<script>
 			setTimeout(function() {
-				odometer.textContent = {% assign total = 0 %}{% for each ep in site.data.episodes %}{% assign total = total | plus: ep.count %}{% endfor %}{{total}};
+				odometer.textContent = {% assign total = 0 %}{% for ep in site.data.episodes %}{% assign total = total | plus: ep.count %}{% endfor %}{{total}};
 			}, 1000);
 		</script>
 		</span> times</h1>
 		<audio id="caaarl" src="caaarl.mp3" preload="none">
 			Your broswer does not support the audio element. Perhaps you should upgrade to <a href="http://google.com/chrome">one that does</a> to enjoy the sound of Caaarl.
 		</audio>
-		<p><a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('caaarl').play()">
-			Hear him say it
-		</a></p>
+		<p><a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('caaarl').play()">Hear him say it</a></p>
 	</div>
 </div>
 <div class="container">
