@@ -322,11 +322,11 @@
   netflix: 
   count: 0
 
-# - id: S05E04
-#   title: 
-#   asin: 
-#   netflix: 
-#   count: 
+- id: S05E04
+  title: Slabtown
+  asin: B00OV61F8A
+  netflix: 
+  count: 0
 
 # - id: S05E05
 #   title: 
