@@ -328,26 +328,26 @@
   netflix: 
   count: 0
 
-# - id: S05E05
-#   title: 
+- id: S05E05
+  title: Self Help
 #   asin: 
 #   netflix: 
 #   count: 
 
-# - id: S05E06
-#   title: 
+- id: S05E06
+  title: Consumed
 #   asin: 
 #   netflix: 
 #   count: 
 
-# - id: S05E07
-#   title: 
+- id: S05E07
+  title: Crossed
 #   asin: 
 #   netflix: 
 #   count: 
 
-# - id: S05E08
-#   title: 
+- id: S05E08
+  title: Coda
 #   asin: 
 #   netflix: 
 #   count: 
