@@ -10,4 +10,3 @@ The source code for [caaarl](http://caaarl.com).
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [Odometer](https://github.com/HubSpot/odometer)
 * [Glyphicons Pro](http://glyphicons.com/)
-* [s3cmd](https://github.com/s3tools/s3cmd)
