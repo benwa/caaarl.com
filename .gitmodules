@@ -1,3 +1,6 @@
 [submodule "odometer"]
 	path = odometer
 	url = https://github.com/HubSpot/odometer
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap
