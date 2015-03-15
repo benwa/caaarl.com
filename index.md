@@ -22,6 +22,7 @@ layout: default
 	</div>
 </div>
 <div class="container">
+	<div id="chart"></div>
 	<div class="row-fluid">
 		<div class="col-md-9 table-responsive" style="padding-left: 0;">
 			<table class="table table-striped">
@@ -35,7 +36,7 @@ layout: default
 				<tbody>
 					{% for ep in site.data.episodes %}
 					<tr>
-						<td>{{ ep.id }}</td>
+						<td>S{% if ep.season < 10 %}0{% endif %}{{ ep.season }}E{% if ep.episode < 10 %}0{% endif %}{{ ep.episode}}</td>
 						<td>{{ ep.title }}<span class="pull-right">{% if ep.asin != null %}<a href="http://amazon.com/dp/{{ ep.asin }}/?tag=caaarl-20" target="_blank" title="Watch on Amazon Instant"><span class="social social-amazon"></span></a>{% endif %}{% if ep.netflix != null %}<a href="http://www.netflix.com/WiPlayer?movieid={{ ep.netflix }}" target="_blank" title="Watch on Netflix" class="pull-right"><span class="social social-netflix"></span></a>{% endif %}</span></td>
 						<td>{% if ep.count != null %}{{ ep.count }}{% else %}-{% endif %}</td>
 					</tr>
