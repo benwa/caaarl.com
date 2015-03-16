@@ -33,7 +33,7 @@
 			google.setOnLoadCallback(function () {
 				var data = new google.visualization.DataTable(
 					{
-						cols: [{label: "Episode", type: "string"}, {label: "Carls", type: "number"}],
+						cols: [{type: "string"}, {label: "Carls", type: "number"}],
 						rows: [{% for e in site.data.episodes %}
 							{c:[{v: "S{% if e.season < 10 %}0{% endif %}{{ e.season }}E{% if e.episode < 10 %}0{% endif %}{{ e.episode}}"}, {v: {{ e.count }}}]}{% unless forloop.last %},{% endunless %}{% endfor %}]
 				});
