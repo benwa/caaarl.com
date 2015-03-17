@@ -29,7 +29,7 @@
 		<script src="https://www.google.com/jsapi"></script>
 		<script>
 			{% assign maxEpisodes = site.data.episodes | sort: "episode" | last %}
-			google.load("visualization", "1.1", {packages: ["line"]});
+			google.load("visualization", "1.1", {packages: ["bar"]});
 			google.setOnLoadCallback(function () {
 				var data = new google.visualization.DataTable(
 					{
@@ -37,7 +37,7 @@
 						rows: [{% for e in site.data.episodes %}
 							{c:[{v: "S{% if e.season < 10 %}0{% endif %}{{ e.season }}E{% if e.episode < 10 %}0{% endif %}{{ e.episode}}"}, {v: {{ e.count }}}]}{% unless forloop.last %},{% endunless %}{% endfor %}]
 				});
-				var chart = new google.charts.Line(document.getElementById("chart"));
+				var chart = new google.charts.Bar(document.getElementById("chart"));
 				chart.draw(data, {
 					colors: ["#286090"],
 					legend: {position: "none"},
