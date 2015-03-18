@@ -37,7 +37,7 @@ layout: default
 					{% for ep in site.data.episodes %}
 					<tr>
 						<td>S{% if ep.season < 10 %}0{% endif %}{{ ep.season }}E{% if ep.episode < 10 %}0{% endif %}{{ ep.episode}}</td>
-						<td>{{ ep.title }}<span class="pull-right">{% if ep.asin != null %}<a href="http://amazon.com/dp/{{ ep.asin }}/?tag=caaarl-20" target="_blank" title="Watch on Amazon Instant"><span class="social social-amazon"></span></a>{% endif %}{% if ep.netflix != null %}<a href="http://www.netflix.com/WiPlayer?movieid={{ ep.netflix }}" target="_blank" title="Watch on Netflix" class="pull-right"><span class="social social-netflix"></span></a>{% endif %}</span></td>
+						<td>{{ ep.title }}<span class="pull-right">{% if ep.asin != null %}<a href="http://amazon.com/dp/{{ ep.asin }}/?tag=caaarl-20" target="_blank" title="Watch on Amazon Instant"><img class="social" src="/images/glyphicons/social-8-amazon.png" srcset="/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x"></a>{% endif %}{% if ep.netflix != null %}<a href="http://www.netflix.com/WiPlayer?movieid={{ ep.netflix }}" target="_blank" title="Watch on Netflix" class="pull-right"><img class="social" src="/images/glyphicons/social-56-netflix.png" srcset="/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x"></a>{% endif %}</span></td>
 						<td>{% if ep.count != null %}{{ ep.count }}{% else %}-{% endif %}</td>
 					</tr>
 					{% endfor %}
