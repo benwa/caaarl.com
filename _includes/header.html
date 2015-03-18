@@ -25,10 +25,8 @@
 		<link href="css/odometer-theme-default.css" rel="stylesheet">
 		<script src="js/odometer.min.js"></script>
 		<script src="js/modernizr.js"></script>
-		<script src="https://www.google.com/jsapi"></script>
+		<script src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script>
 		<script>
-			{% assign maxEpisodes = site.data.episodes | sort: "episode" | last %}
-			google.load("visualization", "1.1", {packages: ["bar"]});
 			google.setOnLoadCallback(function () {
 				var data = new google.visualization.DataTable(
 					{
