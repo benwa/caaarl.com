@@ -1,468 +1,535 @@
 - season: 1
   episode: 1
   title: Days Gone Bye
-  asin: B004A9F9ZI
+  amazon: B004A9F9ZI
   netflix: 70210887
+  youtube: YByvS6EqVp0
   count: 8
 
 - season: 1
   episode: 2
   title: Guts
-  asin: B004B8RWWG
+  amazon: B004B8RWWG
   netflix: 70210888
+  youtube: I6qIwwKA87s
   count: 0
 
 - season: 1
   episode: 3
   title: Tell It to the Frogs
-  asin: B004CD646A
+  amazon: B004CD646A
   netflix: 70210889
+  youtube: x2bJkgITIA0
   count: 2
 
 - season: 1
   episode: 4
   title: Vatos
-  asin: B004DC2WPM
+  amazon: B004DC2WPM
   netflix: 70210890
+  youtube: XiZBDJ80QQM
   count: 2
 
 - season: 1
   episode: 5
   title: Wildfire
-  asin: B004B8RWWG
+  amazon: B004B8RWWG
   netflix: 70210891
+  youtube: dwr19QZ10GE
   count: 0
 
 - season: 1
   episode: 6
   title: TS-19
-  asin: B004E9890G
+  amazon: B004E9890G
   netflix: 70210892
+  youtube: GPIzjrmIVuI
   count: 0
 
 - season: 2
   episode: 1
   title: What Lies Ahead
-  asin: B005WGBOZM
+  amazon: B005WGBOZM
   netflix: 70248461
+  youtube: dBl6WShF0fI
   count: 3
 
 - season: 2
   episode: 2
   title: Bloodletting
-  asin: B005YVSFT8
+  amazon: B005YVSFT8
   netflix: 70248462
+  youtube: Dx-p4dSuBBg
   count: 1
 
 - season: 2
   episode: 3
   title: Save The Last One
-  asin: B0061IMJ2W
+  amazon: B0061IMJ2W
   netflix: 70248463
+  youtube: 0Y3yGEE6Mfw
   count: 8
 
 - season: 2
   episode: 4
   title: Cherokee Rose
-  asin: B006470HQ0
+  amazon: B006470HQ0
   netflix: 70248464
+  youtube: fDxPXsrAFro
   count: 2
 
 - season: 2
   episode: 5
   title: Chupacabra
-  asin: B0067H9VWS
+  amazon: B0067H9VWS
   netflix: 70248465
+  youtube: q6qtIftZ2Lo
   count: 0
 
 - season: 2
   episode: 6
   title: Secrets
-  asin: B006B31AHM
+  amazon: B006B31AHM
   netflix: 70248466
+  youtube: H77w2VJ1GzE
   count: 2
 
 - season: 2
   episode: 7
   title: Pretty Much Dead Already
-  asin: B006FE3FFC
+  amazon: B006FE3FFC
   netflix: 70248467
+  youtube: VtWIpyvQYB8
   count: 0
 
 - season: 2
   episode: 8
   title: Nebraska
-  asin: B0078JPVGY
+  amazon: B0078JPVGY
   netflix: 70248468
+  youtube: LIK8wEH2W2Y
   count: 1
 
 - season: 2
   episode: 9
   title: Triggerfinger
-  asin: B007B8EGVI
+  amazon: B007B8EGVI
   netflix: 70248469
+  youtube: SGRm_Jqo_gA
   count: 1
 
 - season: 2
   episode: 10
   title: 18 Miles Out
-  asin: B007E6Z94U
+  amazon: B007E6Z94U
   netflix: 70248470
+  youtube: OnX_DeauCBw
   count: 2
 
 - season: 2
   episode: 11
   title: Judge, Jury, Executioner
-  asin: B007H51HEE
+  amazon: B007H51HEE
   netflix: 70248471
+  youtube: TIm-zrH0nJ4
   count: 3
 
 - season: 2
   episode: 12
   title: Better Angels
-  asin: B007JF8NRQ
+  amazon: B007JF8NRQ
   netflix: 70248472
+  youtube: cMIN0XwlfCQ
   count: 2
 
 - season: 2
   episode: 13
   title: Beside the Dying Fire
-  asin: B007M6OIF8
+  amazon: B007M6OIF8
   netflix: 70248473
+  youtube: pBv_jklcwfk
   count: 9
 
 - season: 3
   episode: 1
   title: Seed
-  asin: B009QW6ZT8
+  amazon: B009QW6ZT8
   netflix: 70260047
+  youtube: HcGQ9J4KGSU
   count: 1
 
 - season: 3
   episode: 2
   title: Sick
-  asin: B009UQC7NS
+  amazon: B009UQC7NS
   netflix: 70260048
+  youtube: RQygksT7E_I
   count: 1
 
 - season: 3
   episode: 3
   title: Walk With Me
-  asin: B009YDB2QK
+  amazon: B009YDB2QK
   netflix: 70260049
+  youtube: Eh_UunOMQBM
   count: 0
 
 - season: 3
   episode: 4
   title: Killer Within
-  asin: B00A202A3I
+  amazon: B00A202A3I
   netflix: 70260050
+  youtube: HH4dcs9fnFw
   count: 3
 
 - season: 3
   episode: 5
   title: Say The Word
-  asin: B00A65GMM4
+  amazon: B00A65GMM4
   netflix: 70260051
+  youtube: jjCswtVF3vU
   count: 0
 
 - season: 3
   episode: 6
   title: Hounded
-  asin: B00A9Q67G6
+  amazon: B00A9Q67G6
   netflix: 70260052
+  youtube: DLyzZwLd8yQ
   count: 2
 
 - season: 3
   episode: 7
   title: When The Dead Come Knocking
-  asin: B00ADIHWKA
+  amazon: B00ADIHWKA
   netflix: 70260053
+  youtube: ftyhYdwmYpQ
   count: 4
 
 - season: 3
   episode: 8
   title: Made to Suffer
-  asin: B00AH8X1O2
+  amazon: B00AH8X1O2
   netflix: 70260054
+  youtube: I1cE5s939e8
   count: 0
 
 - season: 3
   episode: 9
   title: The Suicide King
-  asin: B00BECZEUY
+  amazon: B00BECZEUY
   netflix: 70260055
+  youtube: vrlGhRnTlkU
   count: 0
 
 - season: 3
   episode: 10
   title: Home
-  asin: B00BHAVGQY
+  amazon: B00BHAVGQY
   netflix: 70260056
+  youtube: pBxmfxNXVRk
   count: 0
 
 - season: 3
   episode: 11
   title: I Ain't a Judas
-  asin: B00BKVKAC6
+  amazon: B00BKVKAC6
   netflix: 70260057
+  youtube: GK8MAWpOlQM
   count: 1
 
 - season: 3
   episode: 12
   title: Clear
-  asin: B00BOL0TSM
+  amazon: B00BOL0TSM
   netflix: 70260058
+  youtube: HyFyjSbnhO4
   count: 5
 
 - season: 3
   episode: 13
   title: Arrow on the Doorpost
-  asin: B00BS4U4YO
+  amazon: B00BS4U4YO
   netflix: 70260059
+  youtube: 6TEyPJHkRjE
   count: 0
 
 - season: 3
   episode: 14
   title: Prey
-  asin: B00BVYR0IO
+  amazon: B00BVYR0IO
   netflix: 70260060
+  youtube: XnhjanA6ZDs
   count: 0
 
 - season: 3
   episode: 15
   title: This Sorrowful Life
-  asin: B00C0OLL52
+  amazon: B00C0OLL52
   netflix: 70260061
+  youtube: 8soMEteS_wU
   count: 0
 
 - season: 3
   episode: 16
   title: Welcome to the Tombs
-  asin: B00C4QVQV0
+  amazon: B00C4QVQV0
   netflix: 70260062
+  youtube: fx_Xj6MkHgo
   count: 4
 
 - season: 4
   episode: 1
   title: 30 Days Without An Accident
-  asin: B00FVS4EUI
+  amazon: B00FVS4EUI
   netflix: 70297524
+  youtube: _2F9ENqj3ZQ
   count: 2
 
 - season: 4
   episode: 2
   title: Infected
-  asin: B00G23VD6Y
+  amazon: B00G23VD6Y
   netflix: 70297525
+  youtube: XIcjlvj2CQg
   count: 5
 
 - season: 4
   episode: 3
   title: Isolation
-  asin: B00G8YVVYG
+  amazon: B00G8YVVYG
   netflix: 70297526
+  youtube: xvTxi6GuljE
   count: 0
 
 - season: 4
   episode: 4
   title: Indifference
-  asin: B00GFJQS8S
+  amazon: B00GFJQS8S
   netflix: 70297527
+  youtube: Fxvmew9F0fE
   count: 2
 
 - season: 4
   episode: 5
   title: Internment
-  asin: B00GLMQWFI
+  amazon: B00GLMQWFI
   netflix: 70297528
+  youtube: CXrSrWeuB58
   count: 7
 
 - season: 4
   episode: 6
   title: Live Bait
-  asin: B00GQ1FTR6
+  amazon: B00GQ1FTR6
   netflix: 70297529
+  youtube: tdKwGJrODOU
   count: 0
 
 - season: 4
   episode: 7
   title: Dead Weight
-  asin: B00GWEQOP8
+  amazon: B00GWEQOP8
   netflix: 70297530
+  youtube: VL6J5EC4Qmk
   count: 0
 
 - season: 4
   episode: 8
   title: Too Far Gone
-  asin: B00H1O47D4
+  amazon: B00H1O47D4
   netflix: 70297531
+  youtube: qsRnSrhyMUQ
   count: 9
 
 - season: 4
   episode: 9
   title: After
-  asin: B00I3269HA
+  amazon: B00I3269HA
   netflix: 70297532
+  youtube: NY4HEzNw2w4
   count: 6
 
 - season: 4
   episode: 10
   title: Inmates
-  asin: B00I32J8LY
+  amazon: B00I32J8LY
   netflix: 70297533
+  youtube: yvuB9pj4iUU
   count: 0
 
 - season: 4
   episode: 11
   title: Claimed
-  asin: B00I325J2Q
+  amazon: B00I325J2Q
   netflix: 70297534
+  youtube: y2O5WzyVATQ
   count: 0
 
 - season: 4
   episode: 12
   title: Still
-  asin: B00IOYB6ZW
+  amazon: B00IOYB6ZW
   netflix: 70297535
+  youtube: nzDwyLYKlr8
   count: 0
 
 - season: 4
   episode: 13
   title: Alone
-  asin: B00IOYB6ZW
+  amazon: B00IOYB6ZW
   netflix: 70297536
+  youtube: z0agLdgLqCw
   count: 0
 
 - season: 4
   episode: 14
   title: The Grove
-  asin: B00IOY8LA0
+  amazon: B00IOY8LA0
   netflix: 70297537
+  youtube: j8nUF_q6SeQ
   count: 0
 
 - season: 4
   episode: 15
   title: Us
-  asin: B00IOYD6F0
+  amazon: B00IOYD6F0
   netflix: 70297538
+  youtube: hk2zrP8VHEg
   count: 0
 
 - season: 4
   episode: 16
   title: A
-  asin: B00IOY9JGU
+  amazon: B00IOY9JGU
   netflix: 70297539
+  youtube: TEiQvypSWf0
   count: 7
 
 - season: 5
   episode: 1
   title: No Sanctuary
-  asin: B00NI1URGA
+  amazon: B00NI1URGA
   netflix: 
+  youtube: m7dgr10-UHo
   count: 1
 
 - season: 5
   episode: 2
   title: Strangers
-  asin: B00ON6B844
+  amazon: B00ON6B844
   netflix: 
+  youtube: 8_paWnNCtzg
   count: 0
 
 - season: 5
   episode: 3
   title: Four Walls and a Roof
-  asin: B00OPAGR12
+  amazon: B00OPAGR12
   netflix: 
+  youtube: zO1UL0YBlRw
   count: 0
 
 - season: 5
   episode: 4
   title: Slabtown
-  asin: B00OV61F8A
+  amazon: B00OV61F8A
   netflix: 
+  youtube: uKZLMPgZavg
   count: 0
 
 - season: 5
   episode: 5
   title: Self Help
-  asin: B00P1S5JMK
+  amazon: B00P1S5JMK
   netflix: 
+  youtube: txL1YSBqbh8
   count: 0
 
 - season: 5
   episode: 6
   title: Consumed
-  asin: B00P1S5SF8
+  amazon: B00P1S5SF8
   netflix: 
+  youtube: sdJ8XeXaUiw
   count: 0
 
 - season: 5
   episode: 7
   title: Crossed
-  asin: B00P1SLFG4
+  amazon: B00P1SLFG4
   netflix: 
+  youtube: E4zwxXWJSEM
   count: 0
 
 - season: 5
   episode: 8
   title: Coda
-  asin: B00P1RX70M
+  amazon: B00P1RX70M
   netflix: 
+  youtube: OW3p2F_V2MU
   count: 0
 
 - season: 5
   episode: 9
   title: What Happened and What's Going On
-  asin: B00SKK4882
+  amazon: B00SKK4882
   netflix: 
+  youtube: p9zdq022Zrs
   count: 1
 
 - season: 5
   episode: 10
   title: Them
-  asin: B00SKK42RE
+  amazon: B00SKK42RE
   netflix: 
+  youtube: UljYyAZChH8
   count: 0
 
 - season: 5
   episode: 11
   title: The Distance
-  asin: B00TT3J7MQ
+  amazon: B00TT3J7MQ
   netflix: 
+  youtube: Ly4qxx2VQ2Q
   count: 1
 
 - season: 5
   episode: 12
   title: Remember
-  asin: B00TT3LG1G
+  amazon: B00TT3LG1G
   netflix: 
+  youtube: 4M4Yl9goFMg
   count: 2
 
 - season: 5
   episode: 13
   title: Forget
-  asin: B00TT3IFIS
+  amazon: B00TT3IFIS
   netflix: 
+  youtube: 2ZNoMqEgEyM
   count: 1
 
 - season: 5
   episode: 14
   title: Spend
-  asin: B00TT3KMKC
+  amazon: B00TT3KMKC
   netflix: 
+  youtube: Gfv-tankHco
   count: 0
 
-# - season: 5
-#   episode: 15
-#   title: Try
-#   asin: 
-#   netflix: 
-#   count: 
+- season: 5
+  episode: 15
+  title: Try
+  amazon: B00TT3IHUO
+  netflix: 
+  youtube: veIAqPexrE0
+  count: 0
 
-# - season: 5
-#   episode: 16
-#   title: Conquer
-#   asin: 
-#   netflix: 
-#   count: 
+- season: 5
+  episode: 16
+  title: Conquer
+  amazon: B00TT3JOII
+  netflix: 
+  youtube: -IwGla7Ka74
+  count: 0
