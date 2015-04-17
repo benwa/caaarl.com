@@ -16,7 +16,7 @@ layout: default
 		</script>
 		</span> times</h1>
 		<audio id="caaarl" src="caaarl.mp3" preload="none">
-			Your broswer does not support the audio element. Perhaps you should upgrade to <a href="http://google.com/chrome">one that does</a> to enjoy the sound of Caaarl.
+			Your broswer does not support the audio element. Perhaps you should upgrade to <a href="//google.com/chrome">one that does</a> to enjoy the sound of Caaarl.
 		</audio>
 		<p><a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('caaarl').play()">Hear him say it</a></p>
 	</div>
@@ -36,7 +36,7 @@ layout: default
 				{% for ep in site.data.episodes %}
 				<tr>
 					<td>S{% if ep.season < 10 %}0{% endif %}{{ ep.season }}E{% if ep.episode < 10 %}0{% endif %}{{ ep.episode}}</td>
-					<td>{{ ep.title }}<span class="pull-right">{% if ep.amazon != null %}<a href="https://amzn.com/{{ ep.amazon }}/?tag=caaarl-20" target="_blank" title="Watch on Amazon Instant"><img class="social" src="/images/glyphicons/social-8-amazon.png" srcset="/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x"></a>{% endif %}{% if ep.netflix != null %}<a href="https://netflix.com/WiPlayer?movieid={{ ep.netflix }}" target="_blank" title="Watch on Netflix" class="pull-right"><img class="social" src="/images/glyphicons/social-56-netflix.png" srcset="/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x"></a>{% endif %}{% if ep.youtube != null %}<a href="https://youtu.be/{{ ep.youtube }}" target="_blank" title="Watch on YouTube"><img class="social" src="/images/glyphicons/social-23-youtube.png" srcset="/images/glyphicons/social-23-youtube@2x.png 2x, /images/glyphicons/social-23-youtube@3x.png 3x"></a>{% endif %}</span></td>
+					<td>{{ ep.title }}<span class="pull-right">{% if ep.amazon != null %}<a href="//amzn.com/{{ ep.amazon }}/?tag=caaarl-20" target="_blank" title="Watch on Amazon Instant"><img class="social" src="/images/glyphicons/social-8-amazon.png" srcset="/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x"></a>{% endif %}{% if ep.netflix != null %}<a href="//netflix.com/WiPlayer?movieid={{ ep.netflix }}" target="_blank" title="Watch on Netflix" class="pull-right"><img class="social" src="/images/glyphicons/social-56-netflix.png" srcset="/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x"></a>{% endif %}{% if ep.youtube != null %}<a href="//youtu.be/{{ ep.youtube }}" target="_blank" title="Watch on YouTube"><img class="social" src="/images/glyphicons/social-23-youtube.png" srcset="/images/glyphicons/social-23-youtube@2x.png 2x, /images/glyphicons/social-23-youtube@3x.png 3x"></a>{% endif %}</span></td>
 					<td>{% if ep.count != null %}{{ ep.count }}{% else %}-{% endif %}</td>
 				</tr>
 				{% endfor %}
