@@ -550,17 +550,17 @@
   youtube: RRl-BtawmtM
   count: 0
 
-# - season: 6
-#   episode: 3
-#   title: Thank You
-#   amazon: 
-#   netflix: 
-#   youtube: 
-#   count: 
+- season: 6
+  episode: 3
+  title: Thank You
+  amazon: B01751I152
+  netflix: 
+  youtube: c4Rs9vekdkY
+  count: 0
 
 # - season: 6
 #   episode: 4
-#   title: 
+#   title: Here's Not Here
 #   amazon: 
 #   netflix: 
 #   youtube: 
@@ -568,7 +568,7 @@
 
 # - season: 6
 #   episode: 5
-#   title: 
+#   title: Now
 #   amazon: 
 #   netflix: 
 #   youtube: 
