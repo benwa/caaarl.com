@@ -23,7 +23,7 @@ layout: default
 </div>
 <div class="container">
 	<div id="chart"></div>
-	<div class="col-md-9 table-responsive" style="padding-left: 0;">
+	<div class="table-responsive">
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -43,5 +43,4 @@ layout: default
 			</tbody>
 		</table>
 	</div>
-	{% include supportUs.html %}
 </div>
