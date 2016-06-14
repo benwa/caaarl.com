@@ -6,7 +6,7 @@ layout: default
 	<div class="container">
 		<h1>Rick has <noscript>called</noscript>
 		<script>
-			document.write(["called", "howled", "screeched", "shrieked", "squalled", "squealed", "yelped", "screamed", "bawled", "bellowed", "cried", "hollered", "roared", "shouted", "exclaimed"][Math.floor(Math.random() * 14 - 1)]);
+			document.write(["called", "howled", "screeched", "shrieked", "squalled", "squealed", "yelped", "screamed", "bawled", "bellowed", "cried", "hollered", "roared", "shouted", "exclaimed"][Math.floor(Math.random() * 15)]);
 		</script>
 		 Carl's name <span id="odometer" class="odometer">000
 		<script>
