@@ -39,9 +39,10 @@
 		<link href="css/odometer-theme-default.css" rel="stylesheet">
 		<script src="js/odometer.min.js"></script>
 		<script src="js/modernizr.min.js"></script>
-		<script src="//www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
 		<script>
-			google.setOnLoadCallback(function () {
+			google.charts.load("current", {"packages": ["bar"]});
+			google.charts.setOnLoadCallback(function () {
 				var data = new google.visualization.DataTable(
 					{
 						cols: [{type: "string"}, {label: "Carls", type: "number"}],
