@@ -35,9 +35,9 @@ layout: default
 			<tbody>
 				{% for ep in site.data.episodes %}
 				<tr>
-					<td>S{% if ep.season < 10 %}0{% endif %}{{ ep.season }}E{% if ep.episode < 10 %}0{% endif %}{{ ep.episode}}</td>
-					<td>{{ ep.title }}<span class="pull-right hidden-xs">{% if ep.amazon != null %}<a href="//amzn.com/{{ ep.amazon }}" target="_blank" title="Watch on Amazon Instant"><img class="social" src="/images/glyphicons/social-8-amazon.png" srcset="/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x"></a>{% endif %}{% if ep.netflix != null %}<a href="//netflix.com/watch/{{ ep.netflix }}" target="_blank" title="Watch on Netflix" class="pull-right"><img class="social" src="/images/glyphicons/social-56-netflix.png" srcset="/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x"></a>{% endif %}{% if ep.youtube != null %}<a href="//youtu.be/{{ ep.youtube }}" target="_blank" title="Watch on YouTube"><img class="social" src="/images/glyphicons/social-23-youtube.png" srcset="/images/glyphicons/social-23-youtube@2x.png 2x, /images/glyphicons/social-23-youtube@3x.png 3x"></a>{% endif %}</span></td>
-					<td>{% if ep.count != null %}{{ ep.count }}{% else %}-{% endif %}</td>
+					<td>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</td>
+					<td>{{ ep.title }}<span class='pull-right hidden-xs'>{% unless ep.amazon == null %}<a href='//amzn.com/{{ ep.amazon }}' target='_blank' title='Watch on Amazon Instant'><img class='social' src='/images/glyphicons/social-8-amazon.png' srcset='/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x'></a>{% endunless %}{% unless ep.netflix == null %}<a href='//netflix.com/watch/{{ ep.netflix }}' target='_blank' title='Watch on Netflix' class='pull-right'><img class='social' src='/images/glyphicons/social-56-netflix.png' srcset='/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x'></a>{% endunless %}{% unless ep.youtube == null %}<a href='//youtu.be/{{ ep.youtube }}' target='_blank' title='Watch on YouTube'><img class='social' src='/images/glyphicons/social-23-youtube.png' srcset='/images/glyphicons/social-23-youtube@2x.png 2x, /images/glyphicons/social-23-youtube@3x.png 3x'></a>{% endunless %}</span></td>
+					<td>{% unless ep.count == null %}{{ ep.count }}{% else %}-{% endunless %}</td>
 				</tr>
 				{% endfor %}
 			</tbody>
