@@ -5,7 +5,7 @@ Rick calls Carl, a lot
 
 The source code for [caaarl](http://caaarl.com).
 
-#Uses
+# Uses
 * [Jekyll](https://github.com/jekyll/jekyll)
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [Odometer](https://github.com/HubSpot/odometer)
