@@ -34,7 +34,8 @@
 		<script src='https://www.gstatic.com/charts/loader.js'></script>
 		<script>
 			google.charts.load('current', {'packages': ['bar']});
-			google.charts.setOnLoadCallback(function() {
+			google.charts.setOnLoadCallback(drawChart);
+			function drawChart() {
 				var data = new google.visualization.DataTable({
 					cols: [{type: 'string'}, {label: 'Carls', type: 'number'}],
 					rows: [{% for ep in site.data.episodes %}
@@ -47,7 +48,8 @@
 					hAxis: {gridlines: {count: 0}, slantedText: true},
 					vAxis: {gridlines: {count: -1}}
 				});
-			});
+			};
+			window.onresize = drawChart;
 		</script>
 		<style>
 			.social {
