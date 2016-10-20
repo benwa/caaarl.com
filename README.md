@@ -5,6 +5,10 @@ Rick calls Carl, a lot
 
 The source code for [caaarl](http://caaarl.com).
 
+# Running
+1. `bundle install` (or `bundle update`)
+2. `bundle exec jekyll serve`
+
 # Uses
 * [Jekyll](https://github.com/jekyll/jekyll)
 * [Bootstrap](https://github.com/twbs/bootstrap)
