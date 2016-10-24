@@ -38,7 +38,7 @@ layout: default
 				<tr>
 					<th scope='row'>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</th>
 					<td>{{ ep.title }}</td>
-					<td class='pull-xs-right hidden-print'>
+					<td class='float-xs-right hidden-print'>
 						<ul class='list-inline'>
 							{% unless ep.amazon == null %}<li class='list-inline-item'><a href='//amzn.com/{{ ep.amazon }}' target='_blank' title='Watch on Amazon Instant'><img class='social' src='/images/glyphicons/social-8-amazon.png' srcset='/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x'></a></li>{% endunless %}
 							{% unless ep.netflix == null %}<li class='list-inline-item'><a href='//netflix.com/watch/{{ ep.netflix }}' target='_blank' title='Watch on Netflix'><img class='social' src='/images/glyphicons/social-56-netflix.png' srcset='/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x'></a></li>{% endunless %}
