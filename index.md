@@ -8,7 +8,7 @@ layout: default
 		<script>
 			document.write(['called', 'howled', 'screeched', 'shrieked', 'squalled', 'squealed', 'yelped', 'screamed', 'bawled', 'bellowed', 'cried', 'hollered', 'roared', 'shouted', 'exclaimed'][Math.floor(Math.random() * 15)]);
 		</script>
-		 Carl's name <span id='odometer'>000
+		 Carl's name <span id='odometer' class='odometer'>000
 		<script>
 			setTimeout(function() {
 				odometer.textContent = {% assign total = 0 %}{% for ep in site.data.episodes %}{% assign total = total | plus: ep.count %}{% endfor %}{{total}};
@@ -36,9 +36,9 @@ layout: default
 			<tbody>
 				{% for ep in site.data.episodes %}
 				<tr>
-					<th scope='row'>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</th>
-					<td>{{ ep.title }}</td>
-					<td class='float-xs-right hidden-print'>
+					<th scope='row' class='align-middle'>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</th>
+					<td class='align-middle'>{{ ep.title }}</td>
+					<td class='align-middle float-xs-right hidden-print'>
 						<ul class='list-inline'>
 							{% unless ep.amazon == null %}<li class='list-inline-item'><a href='//amzn.com/{{ ep.amazon }}' target='_blank' title='Watch on Amazon Instant'><img class='social' src='/images/glyphicons/social-8-amazon.png' srcset='/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x'></a></li>{% endunless %}
 							{% unless ep.netflix == null %}<li class='list-inline-item'><a href='//netflix.com/watch/{{ ep.netflix }}' target='_blank' title='Watch on Netflix'><img class='social' src='/images/glyphicons/social-56-netflix.png' srcset='/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x'></a></li>{% endunless %}
