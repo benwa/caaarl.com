@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class='jumbotron jumbotron-fluid text-xs-center'>
+<div class='jumbotron jumbotron-fluid text-center'>
 	<div class='container'>
 		<h1>Rick has <noscript>called</noscript>
 		<script>
@@ -38,14 +38,14 @@ layout: default
 				<tr>
 					<th scope='row' class='align-middle'>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</th>
 					<td class='align-middle'>{{ ep.title }}</td>
-					<td class='align-middle float-xs-right hidden-print'>
-						<ul class='list-inline'>
+					<td class='align-middle float-right hidden-print'>
+						<ul class='list-inline mb-0'>
 							{% unless ep.amazon == null %}<li class='list-inline-item'><a href='//amzn.com/{{ ep.amazon }}' target='_blank' title='Watch on Amazon Instant'><img class='social' src='/images/glyphicons/social-8-amazon.png' srcset='/images/glyphicons/social-8-amazon@2x.png 2x, /images/glyphicons/social-8-amazon@3x.png 3x'></a></li>{% endunless %}
 							{% unless ep.netflix == null %}<li class='list-inline-item'><a href='//netflix.com/watch/{{ ep.netflix }}' target='_blank' title='Watch on Netflix'><img class='social' src='/images/glyphicons/social-56-netflix.png' srcset='/images/glyphicons/social-56-netflix@2x.png 2x, /images/glyphicons/social-56-netflix@3x.png 3x'></a></li>{% endunless %}
 							{% unless ep.youtube == null %}<li class='list-inline-item'><a href='//youtu.be/{{ ep.youtube }}' target='_blank' title='Watch on YouTube'><img class='social' src='/images/glyphicons/social-23-youtube.png' srcset='/images/glyphicons/social-23-youtube@2x.png 2x, /images/glyphicons/social-23-youtube@3x.png 3x'></a></li>{% endunless %}
 						</ul>
 					</td>
-					<td>{% unless ep.count == null %}{{ ep.count }}{% else %}-{% endunless %}</td>
+					<td class='align-middle'>{% unless ep.count == null %}{{ ep.count }}{% else %}-{% endunless %}</td>
 				</tr>
 				{% endfor %}
 			</tbody>
