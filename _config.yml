@@ -1,3 +1,9 @@
 name: Caaarl
 description: Rick calls Carl, a lot.
 url: "https://caaarl.com"
+twitter:
+  username: frogpocalypse
+logo: /images/ogp.jpg
+
+gems:
+  - jekyll-seo-tag
