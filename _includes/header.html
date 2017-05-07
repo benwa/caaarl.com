@@ -9,13 +9,12 @@
 		<link rel='icon' href='{{ file.path }}' sizes='{{ name }}x{{ name }}' type='image/png'>
 		<link rel='apple-touch-icon' href='{{ file.path }}' sizes='{{ name }}x{{ name }}'>{% endif %}{% endfor %}
 		<link name='msapplication-TileImage' content='/favicon/144.png'>
-		<link href='css/bootstrap.css' rel='stylesheet'>
-		<link href='css/odometer-theme-default.css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" integrity="sha256-K2yDiYk0B1WE0j4NbUVdkEYt5GYBvLwptIlUkg3RLhk=" crossorigin="anonymous" />
 
 		{% seo %}
 
-		<script src='/js/odometer.min.js'></script>
-		<script src='/js/modernizr.min.js'></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script>
 		<script src='https://www.gstatic.com/charts/loader.js'></script>
 		<script>
 			google.charts.load('current', {'packages': ['bar']});
