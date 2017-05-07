@@ -17,21 +17,24 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script>
 		<script src='https://www.gstatic.com/charts/loader.js'></script>
 		<script>
-			google.charts.load('current', {'packages': ['bar']});
+			google.charts.load('current');
 			google.charts.setOnLoadCallback(drawChart);
 			function drawChart() {
-				var data = new google.visualization.DataTable({
-					cols: [{type: 'string'}, {label: 'Carls', type: 'number'}],
-					rows: [{% for ep in site.data.episodes %}
-						{c:[{v: 'S{{ ep.season | prepend: "00" | slice: -2, 2 }}E{{ ep.episode | prepend: "00" | slice: -2, 2 }}'}, {v: {{ ep.count }}}]}{% unless forloop.last %},{% endunless %}{% endfor %}]
+				var wrapper = new google.visualization.ChartWrapper({
+					chartType: 'Bar',
+					dataTable: {
+						cols: [{type: 'string'}, {label: 'Carls', type: 'number'}],
+						rows: [{% for ep in site.data.episodes %}{c:[{v: 'S{{ ep.season | prepend: "00" | slice: -2, 2 }}E{{ ep.episode | prepend: "00" | slice: -2, 2 }}'}, {v: {{ ep.count }}}]}{% unless forloop.last %},{% endunless %}{% endfor %}]
+					},
+					options: {
+						colors: ['#0275d8'],
+						legend: {position: 'none'},
+						hAxis: {gridlines: {count: 0}},
+						vAxis: {gridlines: {count: -1}}
+					},
+					containerId: 'chart'
 				});
-				var chart = new google.charts.Bar(document.getElementById('chart'));
-				chart.draw(data, {
-					colors: ['#0275d8'],
-					legend: {position: 'none'},
-					hAxis: {gridlines: {count: 0}, slantedText: true},
-					vAxis: {gridlines: {count: -1}}
-				});
+				wrapper.draw();
 			};
 
 			var windowWidth = window.innerWidth;
