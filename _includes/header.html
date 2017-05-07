@@ -33,7 +33,14 @@
 					vAxis: {gridlines: {count: -1}}
 				});
 			};
-			window.onresize = drawChart;
+
+			var windowWidth = window.innerWidth;
+			window.onresize = function() {
+				if (windowWidth != window.innerWidth) {
+					drawChart();
+					windowWidth = window.innerWidth;
+				}
+			}
 		</script>
 		<style>
 			.social {
