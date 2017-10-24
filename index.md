@@ -9,9 +9,15 @@ layout: default
 			document.write(['called', 'howled', 'screeched', 'shrieked', 'squalled', 'squealed', 'yelped', 'screamed', 'bawled', 'bellowed', 'cried', 'hollered', 'roared', 'shouted', 'exclaimed'][Math.floor(Math.random() * 15)]);
 		</script>
 		 Carl's name <span id='odometer' class='odometer'>000
+		{%- assign total = 0 -%}
+		{%- for ep in site.data.episodes -%}
+		{%- assign total = total | plus: ep.count -%}
+		{%- endfor -%}
+		Carl's name <span id='odometer' class='odometer'><noscript>{{total}}</noscript>
 		<script>
+			odometer.textContent = '000';
 			setTimeout(function() {
-				odometer.textContent = {% assign total = 0 %}{% for ep in site.data.episodes %}{% assign total = total | plus: ep.count %}{% endfor %}{{total}};
+				odometer.textContent = {{total}};
 			}, 1000);
 		</script>
 		</span> times</h1>
@@ -34,20 +40,31 @@ layout: default
 				</tr>
 			</thead>
 			<tbody>
-				{% for ep in site.data.episodes %}
+				{%- for ep in site.data.episodes -%}
 				<tr>
 					<th scope='row' class='align-middle'>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</th>
 					<td class='align-middle'>{{ ep.title }}</td>
 					<td class='align-middle float-right hidden-print'>
 						<ul class='list-inline mb-0'>
-							{% unless ep.amazon == null %}<li class='list-inline-item'><a href='https://amzn.com/{{ ep.amazon }}' target='_blank' title='Watch on Amazon Instant'><img class='social' src='/images/amazon.svg' width='24px' height='24px' alt='Watch on Amazon Instant'></a></li>{% endunless %}
-							{% unless ep.netflix == null %}<li class='list-inline-item'><a href='https://netflix.com/watch/{{ ep.netflix }}' target='_blank' title='Watch on Netflix'><img class='social' src='/images/netflix.svg' width='24px' height='24px' alt='Watch on Netflix'></a></li>{% endunless %}
-							{% unless ep.youtube == null %}<li class='list-inline-item'><a href='https://youtu.be/{{ ep.youtube }}' target='_blank' title='Watch on YouTube'><img class='social' src='/images/youtube-play.svg' width='24px' height='24px' alt='Watch on YouTube'></a></li>{% endunless %}
+							{%- unless ep.amazon == null -%}
+							<li class='list-inline-item'><a href='https://amzn.com/{{ ep.amazon }}' target='_blank' rel='noopener' title='Watch on Amazon Instant'><img class='social' src='/images/amazon.svg' width='24px' height='24px' alt='Watch on Amazon Instant'></a></li>
+							{%- endunless -%}
+							{%- unless ep.netflix == null -%}
+							<li class='list-inline-item'><a href='https://netflix.com/watch/{{ ep.netflix }}' target='_blank' rel='noopener' title='Watch on Netflix'><img class='social' src='/images/netflix.svg' width='24px' height='24px' alt='Watch on Netflix'></a></li>
+							{%- endunless -%}
+							{%- unless ep.youtube == null -%}
+							<li class='list-inline-item'><a href='https://youtu.be/{{ ep.youtube }}' target='_blank' rel='noopener' title='Watch on YouTube'><img class='social' src='/images/youtube-play.svg' width='24px' height='24px' alt='Watch on YouTube'></a></li>
+							{%- endunless -%}
 						</ul>
 					</td>
-					<td class='align-middle'>{% unless ep.count == null %}{{ ep.count }}{% else %}-{% endunless %}</td>
+					<td class='align-middle'>
+					{%- unless ep.count == null -%}
+					{{ ep.count }}
+					{%- else -%}
+					-
+					{%- endunless -%}</td>
 				</tr>
-				{% endfor %}
+				{%- endfor -%}
 			</tbody>
 		</table>
 	</div>

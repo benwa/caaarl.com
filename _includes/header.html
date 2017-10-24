@@ -5,14 +5,18 @@
 		<meta http-equiv='x-ua-compatible' content='ie=edge'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<title>{{ site.name }}</title>
-		{% for file in site.static_files %}{% if file.path contains '/favicon/' %}{% assign name = file.path | remove: '/favicon/' | remove: file.extname %}
+		{%- for file in site.static_files -%}
+		{%- if file.path contains '/favicon/' -%}
+		{%- assign name = file.path | remove: '/favicon/' | remove: file.extname -%}
 		<link rel='icon' href='{{ file.path }}' sizes='{{ name }}x{{ name }}' type='image/png'>
-		<link rel='apple-touch-icon' href='{{ file.path }}' sizes='{{ name }}x{{ name }}'>{% endif %}{% endfor %}
+		<link rel='apple-touch-icon' href='{{ file.path }}' sizes='{{ name }}x{{ name }}'>
+		{%- endif -%}
+		{%- endfor -%}
 		<link name='msapplication-TileImage' content='/favicon/144.png'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha256-QUyqZrt5vIjBumoqQV0jM8CgGqscFfdGhN+nVCqX0vc=" crossorigin="anonymous" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" integrity="sha256-K2yDiYk0B1WE0j4NbUVdkEYt5GYBvLwptIlUkg3RLhk=" crossorigin="anonymous" />
 
-		{% seo %}
+		{%- seo -%}
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script>
 		<script src='https://www.gstatic.com/charts/loader.js'></script>
