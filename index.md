@@ -4,11 +4,11 @@ layout: default
 
 <div class='jumbotron jumbotron-fluid text-center'>
 	<div class='container'>
-		<h1>Rick has <noscript>called</noscript>
+		<h1>Rick has <span id='called'><noscript>called </noscript>
 		<script>
-			document.write(['called', 'howled', 'screeched', 'shrieked', 'squalled', 'squealed', 'yelped', 'screamed', 'bawled', 'bellowed', 'cried', 'hollered', 'roared', 'shouted', 'exclaimed'][Math.floor(Math.random() * 15)]);
+			called.textContnet = ['called ', 'howled ', 'screeched ', 'shrieked ', 'squalled ', 'squealed ', 'yelped ', 'screamed ', 'bawled ', 'bellowed ', 'cried ', 'hollered ', 'roared ', 'shouted ', 'exclaimed '][Math.floor(Math.random() * 15)];
 		</script>
-		 Carl's name <span id='odometer' class='odometer'>000
+		</span>
 		{%- assign total = 0 -%}
 		{%- for ep in site.data.episodes -%}
 		{%- assign total = total | plus: ep.count -%}
@@ -24,7 +24,7 @@ layout: default
 		<audio id='caaarl' src='caaarl.mp3' preload='none'>
 			Your browser does not support the audio element. Perhaps you should upgrade to <a href='//google.com/chrome'>one that does</a> to enjoy the sound of Caaarl.
 		</audio>
-		<p class='hidden-print'><button class='btn btn-outline-primary btn-lg' onclick='document.getElementById("caaarl").play()'>Hear him say it</button></p>
+		<p class='hidden-print'><button class='btn btn-primary btn-lg' onclick='document.getElementById("caaarl").play()'>Hear him say it</button></p>
 	</div>
 </div>
 <div class='container'>
