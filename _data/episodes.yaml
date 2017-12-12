@@ -810,7 +810,7 @@
   episode: 3
   title: Monsters
   amazon: B0775JBB52
-  netflix: 
+  netflix:
   youtube: 4-1bGxifBLs
   count: 0
 
@@ -818,7 +818,7 @@
   episode: 4
   title: Some Guy
   amazon: B077BQVTNJ
-  netflix: 
+  netflix:
   youtube: vv6CvpQa1c8
   count: 0
 
@@ -826,7 +826,7 @@
   episode: 5
   title: The Big Scary U
   amazon: B077M978F9
-  netflix: 
+  netflix:
   youtube: PTX-6fSpSSE
   count: 0
 
@@ -834,7 +834,7 @@
   episode: 6
   title: The King, the Widow, and Rick
   amazon: B078BQ44Y1
-  netflix: 
+  netflix:
   youtube: yDmyKYhiouA
   count: 0
 
@@ -842,6 +842,14 @@
   episode: 7
   title: Time for After
   amazon: B077X71YYF
-  netflix: 
+  netflix:
   youtube: vuB5ZM8emf8
   count: 0
+
+- season: 8
+  episode: 8
+  title: How It's Gotta Be
+  amazon: B07837LSGR
+  netflix:
+  youtube: ODg3RnbhVnc
+  count: 2
