@@ -24,7 +24,7 @@ layout: default
 		<audio id='caaarl' src='caaarl.mp3' preload='none'>
 			Your browser does not support the audio element. Perhaps you should upgrade to <a href='//google.com/chrome'>one that does</a> to enjoy the sound of Caaarl.
 		</audio>
-		<p class='hidden-print'><button class='btn btn-primary btn-lg' onclick='document.getElementById("caaarl").play()'>Hear him say it</button></p>
+		<p class='d-print-none'><button class='btn btn-primary btn-lg' onclick='document.getElementById("caaarl").play()'>Hear him say it</button></p>
 	</div>
 </div>
 <div class='container'>
@@ -35,7 +35,7 @@ layout: default
 				<tr>
 					<th>Episode</th>
 					<th>Title</th>
-					<th class='hidden-print'></th>
+					<th class='d-print-none'></th>
 					<th># of Carls</th>
 				</tr>
 			</thead>
@@ -44,7 +44,7 @@ layout: default
 				<tr>
 					<th scope='row' class='align-middle'>S{{ ep.season | prepend: '00' | slice: -2, 2 }}E{{ ep.episode | prepend: '00' | slice: -2, 2 }}</th>
 					<td class='align-middle'>{{ ep.title }}</td>
-					<td class='align-middle float-right hidden-print'>
+					<td class='align-middle float-right d-print-none'>
 						<ul class='list-inline mb-0'>
 							{%- unless ep.amazon == null -%}
 							<li class='list-inline-item'><a href='https://amzn.com/{{ ep.amazon }}' target='_blank' rel='noopener' title='Watch on Amazon Instant'><img class='social' src='/images/amazon.svg' width='24px' height='24px' alt='Watch on Amazon Instant'></a></li>
