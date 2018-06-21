@@ -6,7 +6,7 @@ layout: default
 	<div class='container'>
 		<h1>Rick has <span id='called'><noscript>called </noscript>
 		<script>
-			called.textContnet = ['called ', 'howled ', 'screeched ', 'shrieked ', 'squalled ', 'squealed ', 'yelped ', 'screamed ', 'bawled ', 'bellowed ', 'cried ', 'hollered ', 'roared ', 'shouted ', 'exclaimed '][Math.floor(Math.random() * 15)];
+			called.textContent = ['called ', 'howled ', 'screeched ', 'shrieked ', 'squalled ', 'squealed ', 'yelped ', 'screamed ', 'bawled ', 'bellowed ', 'cried ', 'hollered ', 'roared ', 'shouted ', 'exclaimed '][Math.floor(Math.random() * 15)];
 		</script>
 		</span>
 		{%- assign total = 0 -%}
